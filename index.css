@@ -53,8 +53,8 @@ header .purple {
 
 header .card {
     margin: 10px;
-    width: 16vw;
-    height: 16vw;
+    width: 15vw;
+    height: 15vw;
     vertical-align: top;
     display: inline-block;
 }
@@ -97,7 +97,7 @@ header .card {
     border: 1px solid white;
     color: white;
     text-align: center;
-    line-height: 16vw;
+    line-height: 15vw;
 }
 
 .word-card-1 {
