@@ -1,3 +1,7 @@
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: whitesmoke;
+}
 /*** Header ***/
 header {
     width: 100%;
@@ -5,7 +9,6 @@ header {
     border-radius: 0 0 2px 2px;
     color: whitesmoke;
     padding-top: 75px;
-    font-family: 'Karla', sans-serif;
 }
 
 .title {
@@ -138,6 +141,7 @@ nav ul {
     width: 500px;
     margin-left: auto;
     margin-right: 65px;
+    height: 78px;
 }
 
 nav li {
@@ -157,5 +161,70 @@ nav li::after {
 }
 
 nav li:hover::after {
+    width: 100%;
+}
+
+.mission {
+    width: 75%;
+    margin: 25px auto;
+}
+
+.mission img {    
+    width: 100%;
+    margin-top: 25px;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+.mission h2 {
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.mission p {
+    line-height: 1.1;
+    background-color: lightgray;
+    padding: 20px;
+}
+
+.offerings {
+    width: 90%;
+    margin: 50px auto;
+}
+
+.offerings h2 {
+    margin-bottom: 25px;
+}
+
+.offerings > div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.offering-card {
+    width: 30%;
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: lightgray;
+    box-shadow: 7px 6px 13px -2px black;
+}
+
+.offering-card i {
+    font-size: 95px;
+    margin-bottom: 4px;
+}
+
+.offering-card h3 {
+    margin: 15px 10px;
+    font-weight: bold;
+}
+
+.offering-card p {
+    text-align: center;
+}
+
+.breaker {
     width: 100%;
 }
