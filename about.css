@@ -1,0 +1,32 @@
+.page-title {
+    font-size: 250%;
+    margin-top: 50px;
+    margin-left: 100px;
+    font-weight: bold;
+}
+
+.card-container {
+    padding: 0 100px;
+}
+
+.person-card {
+    background-color: lightgray;
+    padding: 25px;
+    margin: 35px 0;
+}
+
+.person-card img {
+    height: 175px; 
+    float: left;
+    margin-right: 15px;
+    border-radius: 3px;
+}
+
+.person-card h2 {
+    font-size: 125%;
+    margin-bottom: 0;
+}
+
+.person-card h3 {
+    font-size: 105%;
+}

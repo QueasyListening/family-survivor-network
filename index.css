@@ -176,7 +176,7 @@ nav li:hover::after {
     border-radius: 4px;
 }
 
-.mission h2 {
+h2 {
     font-weight: bold;
     margin-bottom: 4px;
 }
@@ -185,6 +185,11 @@ nav li:hover::after {
     line-height: 1.1;
     background-color: lightgray;
     padding: 20px;
+}
+
+.intro-video {
+    display: block;
+    margin: 50px auto;
 }
 
 .offerings {
@@ -225,6 +230,81 @@ nav li:hover::after {
     text-align: center;
 }
 
+.offering-card a {
+    color: #0000EE;
+}
+
+.offering-card a:visited {
+    color: #551A8B;
+}
+
 .breaker {
     width: 100%;
+}
+
+.location {
+    margin: 75px;
+}
+
+.location .map {
+    display: block;
+    margin: 25px auto;
+}
+
+footer {
+    width: 100%;
+    background-color: black;
+    border-radius: 4px 4px 0 0;
+    color: whitesmoke;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .info {
+    width: 363px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.info a {
+    color: whitesmoke;
+    text-decoration: none;
+    width: 100%;
+    font-size: 140%;
+    font-weight: normal;
+    margin: 10px 0;
+}
+
+.info i {
+    margin-right: 10px;
+}
+
+.info .fa-map-marker-alt {
+    margin-left: 2px;
+    margin-right: 8px;
+}
+
+.info .fa-phone {
+    margin-right: 13px;
+}
+
+footer img {
+    height: 112px;
+    margin-top: 21px;
+}
+
+footer .social {
+    width: 34%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 25px;
+}
+
+.social a {
+    color: whitesmoke;
+    font-size: 385%;
 }
