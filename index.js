@@ -1,7 +1,15 @@
 let services = document.getElementsByClassName('services')[0];
+let servicesList = document.getElementById('service-list');
+let header = document.querySelector('header');
 
-services.addEventListener('click', () => {
-    const list = document.getElementById('service-list');
-    console.log(list.style.display);
-    list.style.display === 'flex' ? list.style.display = 'none' : list.style.display = 'flex';
-})
+services.addEventListener('mouseover', () => {
+    servicesList.style.display = 'flex';
+});
+
+servicesList.addEventListener('mouseleave', () => {
+    servicesList.style.display = 'none';
+});
+
+header.addEventListener('mouseover', () => {
+    servicesList.style.display = 'none';
+});

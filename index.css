@@ -2,6 +2,7 @@ body {
     font-family: 'Karla', sans-serif;
     background-color: whitesmoke;
 }
+
 /*** Header ***/
 header {
     width: 100%;
@@ -123,6 +124,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    z-index: 999;
 }
 
 nav button {
@@ -133,6 +135,10 @@ nav button {
     border-radius: 30px;
     background: black;
     border: 2px solid #9fcc39;
+}
+
+nav button:hover {
+    box-shadow: 1px 2px 22px 0px #9fcc39
 }
 
 nav .main-links {
@@ -171,8 +177,8 @@ nav .main-links li:hover::after {
     position: absolute;
     flex-direction: column;
     background-color: black;
-    top: 68px;
-    right: 232px;
+    top: 54px;
+    right: 239px;
     line-height: 43px;
     padding: 3px;
     
@@ -185,6 +191,7 @@ nav .main-links li:hover::after {
     padding: 20px;
 }
 
+/* Mission and Intro Video/Text */
 .mission {
     width: 75%;
     margin: 25px auto;
@@ -206,11 +213,28 @@ h2 {
     line-height: 1.1;
     background-color: lightgray;
     padding: 20px;
+    border-left: 5px solid #5b5bdc;
 }
 
 .intro-video-container {
     display: flex;
     margin: 50px 0;
+    position: relative;
+}
+
+.iframe-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+}
+
+.iframe-container iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .intro-video-container p {
@@ -218,6 +242,7 @@ h2 {
     margin-left: 2%;
 }
 
+/* Offerings */
 .offerings {
     width: 90%;
     margin: 50px auto;
@@ -244,6 +269,7 @@ h2 {
 }
 
 .offering-card i {
+    color: #5b5bdc;
     font-size: 95px;
     margin-bottom: 4px;
 }
@@ -265,8 +291,100 @@ h2 {
     color: #551A8B;
 }
 
+/* Breaker */
 .breaker {
     width: 100%;
+}
+
+/* Calendar */
+#calendar {
+    padding: 50px 5%;
+}
+
+#calendar h2 {
+    margin-bottom: 40px;
+}
+
+#calendar a {
+    color: #0000EE
+}
+
+#calendar table, td, th {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+#calendar table {
+    margin: 0 auto;
+    background: lightgray;
+}
+
+#calendar caption {
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: 130%;
+}
+
+#calendar td {
+    height: 100px;
+    width: 100px;
+    text-align: right;
+    vertical-align: top;
+    padding: 5px;
+}
+
+/* Quad */
+.quad {
+    display: -webkit-box;  
+    display: -ms-flexbox;  
+    display: -webkit-flex; 
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    font-weight: bold;
+    margin: 100px 0;
+}
+.quad > a {
+    width: 50%;
+    overflow: hidden;
+    position: relative;
+    color: black;
+    font-size: 140%;
+}
+
+.quad > a:hover > img {
+    -webkit-transform: scale(1.1); 
+    -ms-transform: scale(1.1); 
+    transform: scale(1.1); 
+}
+
+.quad a > img {
+    width: 100%;
+    -webkit-transition: -webkit-transform .25s;
+    transition: -webkit-transform .25s, transform .25s;
+}
+
+.quad > a > div {
+    position: absolute;
+    left: 69%;
+    top: 11%;
+    font-size: 2.8vw;
+}
+
+.quad > a p {
+    font-size: 48%;
+    font-weight: normal; 
+    margin-top: 10px;
+    width: 82%;
+}
+
+.quad .white-font-dark-background {
+    color: white;
+    background-color: black;
+}
+.quad > a .left {
+    left: 8%;
+    width: 28%;
 }
 
 .location {
