@@ -3,198 +3,15 @@ body {
     background-color: whitesmoke;
 }
 
-/*** Header ***/
-header {
-    width: 100%;
-    background-color: black;
-    border-radius: 0 0 2px 2px;
-    color: whitesmoke;
-    padding-top: 75px;
-}
-
-.title {
-    margin-left: 4%;
-    width: 26%;
-    display: inline-block;
-    vertical-align: top;
-}
-
-.title h1 {
-    font-size: 350%;
-}
-
-.title img {
-    height: 100px;
-    margin-bottom: 35px;
-}
-
-.title h2 {
-    margin: 10px 0;
-    font-family: 'Dancing Script', cursive;
-    font-size: 117%;
-}
-
-.title em {
-    font-weight: bold;
-    color: #9fcc39;
-}
-
-header .green {
-    color: #9fcc39;
-}
-
-header .purple {
-    color: #5b5bdc;
-}
-
-
-.collage {
-    width: 66%;
-    display: inline-block;
-    margin-bottom: 65px;
-    margin-left: 3%;
-}
-
-header .card {
-    margin: 10px;
-    width: 15vw;
-    height: 15vw;
-    vertical-align: top;
-    display: inline-block;
-}
-
-.flip-card {
-    background-color: transparent;
-    perspective: 1000px;
-}
-
-.flip-card-1 {
-}
-
-.flip-card-2 {
-}
-
-.flip-card-3 {
-}
-
-.flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-}
-
-.flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-}
-
-.flip-card img {
-    width: 100%;
-    border-radius: 2px;
-}
-
-.word-card {
-    border: 1px solid white;
-    color: white;
-    text-align: center;
-    line-height: 15vw;
-}
-
-.word-card-1 {
-}
-
-.word-card-2 {
-}
-
-.word-card-3 {
-}
-
-/*** Nav ***/
-nav {
-    position: sticky;
-    background: black;
-    color: whitesmoke;
-    width: 100%;
-    height: 75px;
-    line-height: 75px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    z-index: 999;
-}
-
-nav button {
-    margin-left: 50px;
-    color: #9fcc39;
-    height: 40px;
-    width: 88px;
-    border-radius: 30px;
-    background: black;
-    border: 2px solid #9fcc39;
-}
-
-nav button:hover {
-    box-shadow: 1px 2px 22px 0px #9fcc39
-}
-
-nav .main-links {
-    display: flex;
-    justify-content: space-around;
-    width: 500px;
-    margin-left: auto;
-    margin-right: 65px;
-    height: 78px;
-}
-
-nav .main-links li {
-    display: inline;
-    font-size: 180%;
-}
-
-nav .main-links li::after {
-    width: 0;
-    height: 2px;
-    background-color: whitesmoke;
-    content: "";
-    position: relative;
-    top: -65px;
-    display: inline-block;
-    transition: width .4s ease-in-out;
-}
-
-nav .main-links li:hover::after {
-    width: 100%;
-}
-
-#service-list {
-    display: none;
-    height: 300px;
-    width: 200px;
-    position: absolute;
-    flex-direction: column;
-    background-color: black;
-    top: 54px;
-    right: 239px;
-    line-height: 43px;
-    padding: 3px;
-    
-}
-
-#service-list > div {
-    height: 294px;
-    width: 194px;
-    border: 2px solid whitesmoke;
-    padding: 20px;
+.top-breaker {
+    height: 200px;
+    overflow: hidden;
 }
 
 /* Mission and Intro Video/Text */
 .mission {
     width: 75%;
-    margin: 25px auto;
+    margin: 60px auto 30px auto;
 }
 
 .mission img {    
@@ -263,7 +80,7 @@ h2 {
     padding: 25px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     background-color: lightgray;
     box-shadow: 7px 6px 13px -2px black;
 }
@@ -272,6 +89,8 @@ h2 {
     color: #5b5bdc;
     font-size: 95px;
     margin-bottom: 4px;
+    width: 100%;
+    text-align: center;
 }
 
 .offering-card h3 {
