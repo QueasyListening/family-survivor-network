@@ -128,7 +128,7 @@ nav {
     z-index: 999;
 }
 
-nav button {
+.donate-btn {
     margin-left: 50px;
     color: #9fcc39;
     height: 40px;
@@ -138,7 +138,7 @@ nav button {
     border: 2px solid #9fcc39;
 }
 
-nav button:hover {
+.donate-btn:hover {
     box-shadow: 1px 2px 22px 0px #9fcc39
 }
 
@@ -192,7 +192,9 @@ nav .main-links li:hover {
     height: 47px;
     width: 47px;
     border-radius: 7px;
-    margin-right: 20px;
+    position: absolute;
+    right: 20px;
+    top: 12px;
     background-color: black;
     border: none;
 }
@@ -221,6 +223,11 @@ nav .main-links li:hover {
         font-size: 290%;
     }
 
+    .title img {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
     header .card {
         width: 28%;
         margin: 5px;
@@ -233,5 +240,92 @@ nav .main-links li:hover {
 
     nav .main-links li {
         font-size: 140%;
+        line-height: 70px;
+        width: 225px;
+    }
+    
+    nav .donate-btn {
+        margin-left: 4%;
+    }
+}
+
+/* This is the break point where the nav switched to a drop-down */
+@media(max-width: 620px) {
+
+    .title {
+        width: 36%;
+    }
+
+    .collage {
+        width: 200px;
+        position: absolute;
+        right: 20px;
+        top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    header .card {
+        width: 85px;
+        height: 85px;
+        line-height: 85px;
+        font-size: 75%;
+    }
+
+    nav {
+        transition: height .9s ease-in-out;
+    }
+
+    nav .donate-btn {
+        margin-left: 0;
+        position: absolute;
+        top: 20px;
+        left: 4%;
+    }
+    
+    .hamburger-btn {
+        display: block;
+    }
+
+    nav .main-links {
+        flex-direction: column;
+        align-items: center;
+        height: 0px;
+        margin-top: 30px;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        transition: height .9s ease-in-out, opacity .9s linear;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+    }
+
+    nav .main-links li {
+        display: block;
+        height: 0px;
+        font-size: 200%;
+        transition: height .9s ease-in-out;
+    }
+}
+
+@media(max-width: 466px) {
+    .collage {
+        display: none;
+    }
+
+    .title {
+        width: 100%;
+        padding-left: 38px;
+    }
+
+    nav .donate-btn {
+        top: -48px;
+        right: 20px;
+        left: unset;
+    }
+
+    nav .main-links li {
+        width: 165px;
     }
 }
