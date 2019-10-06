@@ -3,6 +3,14 @@ body {
     background-color: whitesmoke;
 }
 
+a {
+    color: #0000EE;
+}
+
+a:visited {
+    color: #551A8B
+}
+
 .top-breaker {
     height: 200px;
     overflow: hidden;
@@ -41,7 +49,8 @@ h2 {
 
 .iframe-container{
     position: relative;
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     padding-bottom: 56.25%; 
     height: 0;
 }
@@ -96,18 +105,11 @@ h2 {
 .offering-card h3 {
     margin: 15px 10px;
     font-weight: bold;
+    color: black;
 }
 
 .offering-card p {
     text-align: center;
-}
-
-.offering-card a {
-    color: #0000EE;
-}
-
-.offering-card a:visited {
-    color: #551A8B;
 }
 
 /* Breaker */

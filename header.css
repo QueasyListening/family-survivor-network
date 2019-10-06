@@ -128,6 +128,14 @@ nav {
     z-index: 999;
 }
 
+nav a {
+    color: whitesmoke;
+}
+
+nav a:visited {
+    color: whitesmoke;
+}
+
 .donate-btn {
     margin-left: 50px;
     color: #9fcc39;
@@ -240,12 +248,18 @@ nav .main-links li:hover {
 
     nav .main-links li {
         font-size: 140%;
-        line-height: 70px;
-        width: 225px;
+        height: 40px;
+        line-height: 40px;
+        width: 110px;
     }
     
     nav .donate-btn {
         margin-left: 4%;
+    }
+
+    #service-list {
+        top: 50px;
+        right: 168px;
     }
 }
 
@@ -306,6 +320,8 @@ nav .main-links li:hover {
         height: 0px;
         font-size: 200%;
         transition: height .9s ease-in-out;
+        width: 250px;
+        line-height: 70px;
     }
 }
 

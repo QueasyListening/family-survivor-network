@@ -1,0 +1,44 @@
+a {
+    color: #0000EE;
+}
+
+a:visited {
+    color: #551A8B
+}
+
+#virtual-support {
+    padding: 0 75px;
+    margin-bottom: 75px;
+}
+
+.fa-laptop-medical {
+    font-size: 1100%;
+    color: #5b5bdc;
+    width: 320px;
+    margin:75px auto;
+    display: block !important;
+    background-color: lightgray;
+    padding: 50px;
+}
+
+#virtual-support h1 {
+    font-weight: bold;
+    font-size: 150%;
+    margin-bottom: 4px;
+}
+
+.impt-txt {
+    line-height: 1.1;
+    background-color: lightgray;
+    padding: 20px;
+    border-left: 5px solid #5b5bdc;
+}
+
+.impt-txt a {
+    font-weight: bold;
+    font-size: 110%;
+}
+
+.breaker {
+    width: 100%;
+}

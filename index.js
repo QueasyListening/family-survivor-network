@@ -2,17 +2,24 @@ let services = document.getElementsByClassName('services')[0];
 let servicesList = document.getElementById('service-list');
 let header = document.querySelector('header');
 
-// services.addEventListener('mouseover', () => {
-//     servicesList.style.display = 'flex';
-// });
+/* Code for service list */
+services.addEventListener('mouseover', () => {
+    if (window.innerWidth > 620)
+        servicesList.style.display = 'flex';
+});
 
-// servicesList.addEventListener('mouseleave', () => {
-//     servicesList.style.display = 'none';
-// });
+servicesList.addEventListener('mouseover', () => {
+    if (window.innerWidth > 620)
+        servicesList.style.display = 'flex';
+});
 
-// header.addEventListener('mouseover', () => {
-//     servicesList.style.display = 'none';
-// });
+servicesList.addEventListener('mouseleave', () => {
+    servicesList.style.display = 'none';
+});
+
+services.addEventListener('mouseleave', () => {
+    servicesList.style.display = 'none';
+});
 
 // Set the order of the cards in the header --- NEEDS REFACTORING
 let cards = Array.from(document.querySelectorAll('header .card'));

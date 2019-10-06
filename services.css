@@ -1,0 +1,85 @@
+/* Offerings */
+.offerings {
+    width: 90%;
+    margin: 50px auto;
+}
+
+.offerings h2 {
+    margin-bottom: 25px;
+}
+
+.offering-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 75px;
+}
+
+.offering-card {
+    width: 30%;
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: lightgray;
+    box-shadow: 7px 6px 13px -2px black;
+}
+
+.offering-card i {
+    color: #5b5bdc;
+    font-size: 95px;
+    margin-bottom: 4px;
+    width: 100%;
+    text-align: center;
+}
+
+.offering-card h3 {
+    margin: 15px 10px;
+    font-weight: bold;
+    color: black;
+}
+
+.offering-card p {
+    text-align: center;
+}
+
+/* Breaker */
+.breaker {
+    width: 100%;
+}
+
+/* Calendar */
+#calendar {
+    padding: 50px 5%;
+}
+
+#calendar h2 {
+    margin-bottom: 40px;
+}
+
+#calendar a {
+    color: #0000EE
+}
+
+#calendar table, td, th {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+#calendar table {
+    margin: 0 auto;
+    background: lightgray;
+}
+
+#calendar caption {
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: 130%;
+}
+
+#calendar td {
+    height: 100px;
+    width: 100px;
+    text-align: right;
+    vertical-align: top;
+    padding: 5px;
+}
